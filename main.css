@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Green:hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%)
+}
+body{
+    background-color: var(--Off-Black);
+    position: relative;
+    font-family: "inter";
+    width: 100vw;
+    height: 100vh;
+}
+.parent{
+    background-color: var(--Dark-Grey);
+    height:auto;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom:40px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+h1{
+    font-weight: 700;
+    color: var(--White);
+}
+h4{
+    font-weight: 600;
+    color: var(--Green);
+    padding: 10px;
+}
+p{
+    font-size: 14px;
+    color: var(--White);
+    font-weight: 400;
+    margin: 20px;
+}
+.img{
+    width: 100%;
+    margin:30px 15px;
+}
+img{
+    border-radius: 50%;
+    width: 90px;
+}
+a{
+    background-color: var(--Grey);
+    width: 85%;
+    height: 50px;
+    border-radius:10px 10px;
+    padding-top:15px;
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px;
+}
+a:hover{
+    background-color: var(--Green);
+    color:var(--Dark-Grey);
+}
+@media (min-width:375px) {
+    .parent{
+        width: 350px;
+        margin: 20px;
+    }
+    
+}
